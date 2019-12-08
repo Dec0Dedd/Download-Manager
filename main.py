@@ -17,6 +17,7 @@ def handler(start, end, url, filename):
         var = fp.tell()
         fp.write(r.content)
 
+
 @click.command(help="It downloads the specified file with specified name")
 @click.option('—number_of_threads',default=4, help="No of Threads")
 @click.option('--name',type=click.Path(),help="Name of the file with extension")
